@@ -11,6 +11,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: none;
+    font-family: 'Lato', sans-serif;
 }
 header .top{
     background: var(--top-head);
@@ -61,19 +62,27 @@ main{
     margin: 20px 0;
 }
 
-.fir-cont{
+.fir-cont, .all-first{
     padding: 30px;
     margin-top: 30px;
     background: var(--blanc);
 }
 
-.cont-second{
+.sous_first{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.cont-second, .all-second{
     padding: 20px;
     background: var(--blanc);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .cont-second img{
     width: 100%;
@@ -95,13 +104,15 @@ main{
 }
 p{
     text-justify: auto;
+    font-weight: 500;
+    text-align: justify;
 }
 
 .cont-third{
     padding: 20px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     background: var(--blanc);
 }
 
@@ -118,14 +129,29 @@ p{
     margin: 30px 0;
 }
 
-.four-cont{
+.four-cont, .all-fourth{
     background: var(--blanc);
     padding: 20px;
     display: flex;
     flex-direction: row-reverse;
 }
+
+.all-fourth{
+    display: flex;
+    flex-direction: column;
+}
 .four-cont img{
     margin: 0 0 10px 20px ;
+}
+
+.ar-space{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.ar-space p{
+    font-weight: 600;
+    font-size: 17px;   
 }
 footer{
     padding: 30px 0 50px 0 ;
@@ -155,4 +181,24 @@ footer{
         padding: 0 50px;
     }
     
+}
+@media screen and (max-width: 575px) {
+    .foot-cont img{
+    margin: 0 20px;
+
+}
+}
+
+@media screen and (max-width: 670px) {
+    .foot-cont img{
+    margin: 0 20px;
+
+}
+}
+
+@media screen and (max-width: 870px) {
+    .foot-cont img{
+    margin: 0 20px;
+
+}
 }
